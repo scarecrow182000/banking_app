@@ -1,0 +1,11 @@
+<h1> Your Account </h1><br></br>
+
+<h2> Your Balance </h2> <%= @balance %> <br></br>
+
+<div class="transaction">
+<%= form_tag do %>
+  <%= text_field_tag :amount,"", placeholder: "Amount $" %>
+  <%= submit_tag "Deposit", id: "deposit(amount)", class: "btn btn-medium btn-success" %>
+  <%= submit_tag "Withdraw", id: "submit(withdrawal)", class: "btn btn-medium btn-danger" %>
+<% end %>
+</div><br></br>
